@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Sea AI Code Generator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-image: url('bg1.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            max-width: 800px; /* Limit container width */
+            width: 90%; /* Occupy most of the screen width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .logo {
+            max-width: 300px; /* Limit logo width */
+            width: 80%; /* Make logo responsive */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em; /* Slightly smaller heading */
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1em; /* Slightly smaller paragraph */
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px; /* Slightly smaller button padding */
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em; /* Slightly smaller button font */
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Smaller heading on small screens */
+            }
+
+            p {
+                font-size: 0.9em; /* Smaller paragraph on small screens */
+            }
+
+            .cta-button {
+                font-size: 0.9em; /* Smaller button font on small screens */
+                padding: 10px 20px;
+            }
+
+            .logo {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img class="logo" src="lg.png" alt="Red Sea AI Logo">
+    <h1>Red Sea AI Code Generator</h1>
+    <p>Generate code quickly and efficiently with Red Sea AI. Our AI-powered tool helps you write code faster and with fewer errors.</p>
+    <a class="cta-button"  onclick="openApp()">Try AI Generator</a>
+</div>
+<script>
+    function openApp() {
+        window.open("http://localhost:8501", "_blank"); // Opens the Streamlit app in a new tab
+    }
+</script>
+
+</body>
+</html>
